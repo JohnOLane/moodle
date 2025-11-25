@@ -4,6 +4,3 @@
 [submodule "course/format/topcoll"]
 	path = course/format/topcoll
 	url = git@github.com:uofr/moodle-format_topcoll.git
-[submodule "mod/journal"]
-	path = mod/journal
-	url = git@github.com:elearningsoftware/moodle-mod_journal.git
