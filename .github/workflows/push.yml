@@ -107,6 +107,7 @@ jobs:
       - name: Checking out code from ${{ env.GITHUB_REF_SLUG }}
         uses: actions/checkout@v4
         with:
+          ssh-key: ${{ secrets.SSH_TEST }}
           submodules: 'recursive'
 
       - name: Setting up PHPUnit
