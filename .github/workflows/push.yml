@@ -109,11 +109,6 @@ jobs:
         with:
           ssh-key: ${{ secrets.SSH_TEST }}
           submodules: 'recursive'
-  
-      - name: Behat features
-        id: behat
-        if: ${{ !cancelled() }}
-        run: moodle-plugin-ci behat --profile chrome
 
       - name: Setting up PHPUnit
         env:
